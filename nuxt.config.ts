@@ -8,4 +8,5 @@ export default defineNuxtConfig({
   elementPlus: {
     /** Options */
   },
+  ssr: false
 });
