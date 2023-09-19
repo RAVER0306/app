@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="h-7xl">
     <PieChart></PieChart>
 
@@ -18,4 +18,25 @@ counter.value = counter.value || String(Math.round(Math.random() * 1000))
 const mathCounter = () => {
   counter.value = String(Math.round(Math.random() * 1000))
 }
-</script>
+const { isMobile } = useDevice();
+
+console.log(isMobile);
+
+</script> -->
+
+<template>
+  <NuxtPage />
+</template>
+
+<style lang="scss">
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
