@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   build: {
     transpile: [/echarts/, "resize-detector"],
   },
@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     "@formkit/auto-animate/nuxt",
     "@nuxtjs/color-mode",
     "@vueuse/nuxt",
+    "@nuxt/image",
   ],
   elementPlus: {
     icon: "ElIcon",

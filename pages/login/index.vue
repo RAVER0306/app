@@ -10,19 +10,10 @@
                 <div class="grid-content ep-bg-purple-light bg-blue" />
             </el-col>
         </el-row>
-        <el-switch v-model="colorMode" inline-prompt active-text="dark" inactive-text="light" size="large"></el-switch>
     </div>
 </template>
 
 <script setup lang="ts">
-const color = useColorMode();
-
-console.log(color.value)
-
-const colorMode = computed({
-    get: () => color.value === 'dark',
-    set: () => (color.preference = color.value === 'dark' ? 'light' : 'dark'),
-});
 </script>
 
 <style scoped lang="scss">

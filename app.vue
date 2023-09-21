@@ -25,7 +25,10 @@ console.log(isMobile);
 </script> -->
 
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtLoadingIndicator :throttle="0" :height="2" />
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style lang="scss">
